@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+
+header {
+  overflow-y: hidden;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+header a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header img {
+  padding: 5px 15px;
+  width: 20px;
+  height: 20px;
+}
+
+header span {
+  overflow-y: hidden;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+header span a {
+  overflow-y: hidden;
+  text-decoration: none;
+  color: rgba(0,0,0,0.7)
+}
+
+header span a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.banner {
+  height: 500px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7b/Friedrich_Heinrich_Jacobi_portrait.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  padding: 50px 64px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main h1 {
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 5px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.85)
+}
+
+.main h2 {
+  font-family: "Quicksand", sans-serif;
+  font-style: italic;
+  padding-bottom: 20px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.85) 
+  font-size: 14px; 
+}
+
+.main p {
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: rgba(0,0,0,0.75);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.main em {
+  font-family: italic;
+  font-weight: 500;
+}
+
+.main p a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  font-weight: 300;
+}
+
+.resources {
+  padding: 0 64px 25px 64px;
+}
+
+.resources h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: rgba(0,0,0,0.5);
+  padding-bottom: 5px;
+}
+
+.resources ul {
+  list-style-type: none;
+}
+
+.resources li {
+  padding: 5px 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.resources a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  font-weight: 300;
+}
+
+.resources a:focus{
+  outline: none;
+  border-color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+
+.footer {
+  padding: 5px 15px;
+  height: 35px;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.footer li {
+  font-size: 12px;
+  display: inline;
+  color: black;
+  line-height: 40px;
+  padding: 5px 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+
+.footer a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@media all and (device-width:768px) {
+  .banner {
+    background-image: url("../images/cave_mobile.jpg");
+  }
+}
+
+@media all and (max-device-width: 425px) {
+  .banner {
+    background-image: url("../images/cave_mobile.jpg")
+  }
+  header img {
+    width: 18px;
+    height: 18px;
+  }
+  header span {
+    font-size: 14px;
+  }
+  .main {
+    padding: 50px 25px;
+  }
+  .main h1 {
+    font-size: 25px;
+  }
+  .main p {
+    text-align:justify;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .resources {
+    padding: 0 25px 50px 25px;
+  }
+  .footer li {
+    font-size: 10px;
+  }
+}
+}
+
+@media all and (device-width:667px) {
+  .banner {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7b/Friedrich_Heinrich_Jacobi_portrait.jpg");
+  }
+}

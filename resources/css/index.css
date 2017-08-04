@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+
+header {
+  overflow-y: hidden;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+header a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header img {
+  padding: 5px 15px;
+  width: 20px;
+  height: 20px;
+}
+
+header span {
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+header span a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.7)
+}
+
+header span a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+/* Banner Section */
+
+.banner {
+  overflow-y: hidden;
+  background-image: url("../images/Thinker.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 685px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.banner .text-content {
+  overflow-y: hidden;
+  width: 35%;
+  position: relative;
+  top: 200px;
+  left: 90px;
+  justify-content: wrap;
+  text-align: center;
+}
+
+.banner .text-content h1 {
+  font-family: "Quicksand", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 70px;
+  font-weight: 300;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  overflow-y: hidden;
+}
+
+.banner .text-content p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  color: rgba(255,255,255,0.8);
+  font-weight: 350;
+  line-height: 1.5;
+}
+
+/* Supporting Section */
+
+.supporting {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-shrink: 1;
+}
+
+.explore,
+.learn,
+.grow {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 275px;
+  display: flex;
+  flex-shrink: 1;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.explore h2,
+.learn h2,
+.grow h2 {
+  flex-shrink: 1;
+  color: rgba(0,0,0,0.8);
+  font-weight: 300;
+  font-size: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.explore img,
+.learn img,
+.grow img {
+  flex-shrink: 2;
+  padding-bottom: 20px;
+}
+
+.explore p,
+.learn p,
+.grow p {
+  flex-shrink:1;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Banner 2 */
+
+.banner-2 {
+  background-image: url("../images/statues.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.banner-2 .btn-main {
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(255,255,255,0.95);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+}
+
+.banner-2 .btn-main:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.banner-2 .btn-main a:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+
+.footer {
+  padding: 5px 15px;
+  height: 35px;
+  background-color: white;
+}
+
+.footer li {
+  font-size: 12px;
+  display: inline;
+  color: black;
+  line-height: 40px;
+  padding: 5px 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+
+.footer a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+@media all and (max-device-width:425px) {
+  header img {
+    width: 18px;
+    height: 18px;
+  }
+  header span {
+    font-size: 14px;
+  }
+  .banner {
+    height: 400px;
+    background-image: url("../images/Thinker_mobile.jpg");
+  }
+  .banner .text-content {
+    width: 100%;
+    position: relative;
+    top: 150px;
+    left: 0px;
+    align-items: center;
+  }
+  .banner .text-content h1 {
+    font-size: 40px;
+    border: none;
+  }
+  .banner .text-content p {
+    font-size: 20px;
+  }
+  .supporting {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .explore,
+  .learn,
+  .grow {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .banner-2 {
+    background-image: url("../images/statues_mobile.jpg");
+  }
+  .footer li {
+    font-size: 10px;
+  }
+}
+
+@media all and (device-width:768px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .text-content {
+    top: 150px;
+    left:40px;
+  }
+  .banner .text-content h1 {
+    font-size: 45px;
+  }
+  .banner .text-content p {
+    font-size: 20px;
+  }
+  .explore h2,
+  .learn h2,
+  .grow h2{
+    font-size: 30px;
+  }
+}
+
+@media all and (device-width: 732px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .text-content h1 {
+    font-size: 38px;
+  }
+  .banner .text-content p {
+    font-size:18px;
+  }
+}
+
+@media all and (device-width: 736px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .text-content h1 {
+    font-size: 38px;
+  }
+  .banner .text-content p {
+    font-size:18px;
+  }
+}
+
+@media all and (device-width: 667px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .text-content h1 {
+    font-size: 38px;
+  }
+  .banner .text-content p {
+    font-size:18px;
+  }
+}
+
+@media all and (device-width: 1024px){
+  .banner {
+    height: 560px;
+  }
+  .banner .text-content {
+    top: 200px;
+  }
+  .banner .text-content p {
+    font-size: 26px;
+  }
+}
+
+@media all and (device-width: 1440px) {
+  .banner .text-content {
+    width: 30%;
+    left: 200px;
+  }
+}

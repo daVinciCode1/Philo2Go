@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+
+header {
+  overflow-y: hidden;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+header a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header img {
+  padding: 5px 15px;
+  width: 20px;
+  height: 20px;
+}
+
+header span {
+  overflow-y: hidden;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+header span a {
+  overflow-y: hidden;
+  text-decoration: none;
+  color: rgba(0,0,0,0.7)
+}
+
+header span a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* Main */
+
+.main {
+  padding: 50px 62px;
+}
+
+.main h1 {
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 20px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.85)
+}
+
+.main p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding-bottom: 40px;
+  color: rgba(0,0,0,0.75);
+  font-weight: 400;
+}
+
+/* Articles */
+
+.articles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article_1 {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 250px;
+  background-image: url("../images/cave_thumbnail_mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.articles h2{
+  color: rgba(255,255,255,0.9);
+  padding-left: 40px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+.article_2 {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 250px;
+  background-image: url("../images/nietz.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.articles a {
+  text-decoration: none;
+}
+
+.articles a:hover {
+  cursor: pointer;
+  text-decoration-color: white;
+}
+
+.article_1:hover {
+  opacity: 0.8;
+}
+
+.article_2:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+
+.footer {
+  padding: 5px 15px;
+  height: 35px;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.footer li {
+  font-size: 12px;
+  display: inline;
+  color: black;
+  line-height: 40px;
+  padding: 5px 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+
+.footer a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@media all and (max-device-width:425px) {
+  header img {
+    width: 18px;
+    height: 18px;
+  }
+  header span {
+    font-size: 14px;
+  }
+  .main{
+    padding: 25px 15px;
+    text-align: justify;
+  }
+  .main h1 {
+    font-size: 28px;
+  }
+  .main p {
+    font-size: 16px;
+  }
+  .footer li {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-device-width: 425px) {
+  .articles {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .article_1 {
+    background-image: url("../images/cave_thumbnail_mobile.jpg");
+    height: 200px;
+    width: 100%
+  }
+  .article_2 {
+    background-image: url("../images/nietz_thumbnail_mobile.jpg");
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+  }
+  .articles h2 {
+    font-size: 22px;
+  }
+}
+
+@media all and (device-width: 768px) {
+  .main {
+    padding: 50px 25px;
+  }
+  .articles {
+    flex-flow: column wrap;
+  }
+  .article_1 {
+    background-image: url("../images/cave_thumbnail_mobile.jpg");
+    height: 200px;
+    width: 100%
+  }
+  .article_2 {
+    background-image: url("../images/nietz_thumbnail_mobile.jpg");
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+  }
+}
