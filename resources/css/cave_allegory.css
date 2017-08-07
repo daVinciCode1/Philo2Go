@@ -54,24 +54,37 @@ header span a:hover {
   background-size: cover;
 }
 
+.article {
+  width: 850px;
+  margin: 0 auto;
+}
+
 .main {
-  padding: 50px 64px;
+  justify-content: center;
+  padding: 50px 0px;
   display: flex;
   flex-flow: column wrap;
 }
 
 .main h1 {
-  font-family: "Quicksand", sans-serif;
-  padding-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 5px;
   font-weight: 400;
   color: rgba(0,0,0,0.85)
+}
+
+.main h2 {
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 20px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.85);
+  font-size: 20px;
 }
 
 .main p {
   text-align: justify;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
-  padding-bottom: 10px;
   color: rgba(0,0,0,0.75);
   font-weight: 400;
   line-height: 1.5;
@@ -89,13 +102,13 @@ header span a:hover {
 }
 
 .resources {
-  padding: 0 64px 25px 64px;
+  padding: 20px 0 40px 0;
 }
 
 .resources h2 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 23px;
   color: rgba(0,0,0,0.5);
   padding-bottom: 5px;
 }
@@ -105,7 +118,7 @@ header span a:hover {
 }
 
 .resources li {
-  padding: 5px 5px;
+  padding: 5px 0;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -124,10 +137,13 @@ header span a:hover {
 /* Footer */
 
 .footer {
-  padding: 5px 15px;
+  width: 850px;
+  margin: 20px auto 0 auto;
+  padding: 5px 0;
   height: 35px;
   background-color: white;
   overflow-y: hidden;
+  border-top: 1px solid grey;
 }
 
 .footer li {
@@ -153,6 +169,12 @@ header span a:hover {
   .banner {
     background-image: url("../images/cave_mobile.jpg");
   }
+  .article {
+    width: 600px;
+  }
+  .footer {
+    width: 600px;
+  }
 }
 
 @media all and (max-device-width: 425px) {
@@ -166,8 +188,11 @@ header span a:hover {
   header span {
     font-size: 14px;
   }
+  .article {
+    width: 350px;
+  }
   .main {
-    padding: 50px 25px;
+    padding: 35px 0;
   }
   .main h1 {
     font-size: 25px;
@@ -180,6 +205,10 @@ header span a:hover {
   .resources {
     padding: 0 25px 50px 25px;
   }
+  .footer {
+    width: 350px;
+    padding: 0;
+  }
   .footer li {
     font-size: 10px;
   }
@@ -189,5 +218,14 @@ header span a:hover {
 @media all and (device-width:667px) {
   .banner {
     background-image: url("../images/cave_mobile.jpg");
+  }
+}
+
+@media all and (device-width: 320px) {
+  .article {
+    width: 280px;
+  }
+  .footer {
+    width: 280px;
   }
 }
