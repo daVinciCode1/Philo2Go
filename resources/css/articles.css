@@ -115,6 +115,17 @@ header span a:hover {
   background-repeat: no-repeat;
 }
 
+.article_4 {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 250px;
+  background-image: url("../images/descartes_thumbnail.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .articles a {
   text-decoration: none;
 }
@@ -210,6 +221,11 @@ header span a:hover {
     height: 200px;
     width: 100%;
   }
+  .article_4 {
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+  }
   .articles h2 {
     font-size: 22px;
   }
@@ -235,6 +251,11 @@ header span a:hover {
   }
   .article_3 {
     background-image: url("../images/kant_thumbnail_mobile.jpg");
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+  }
+  .article_4 {
     margin-top: 15px;
     height: 200px;
     width: 100%;
