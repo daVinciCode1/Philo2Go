@@ -126,6 +126,17 @@ header span a:hover {
   background-repeat: no-repeat;
 }
 
+.article_5 {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 250px;
+  background-image: url("../images/sartre_thumbnail.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .articles a {
   text-decoration: none;
 }
@@ -148,6 +159,10 @@ header span a:hover {
 }
 
 .article_4:hover {
+  opacity: 0.8;
+}
+
+.article_5:hover {
   opacity: 0.8;
 }
 
@@ -230,6 +245,12 @@ header span a:hover {
     height: 200px;
     width: 100%;
   }
+  .article_5 {
+    background-image: url("../images/sartre_thumbnail_mobile.jpg");
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+  }
   .articles h2 {
     font-size: 22px;
   }
@@ -260,6 +281,12 @@ header span a:hover {
     width: 100%;
   }
   .article_4 {
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+  }
+  .article_5 {
+    background-image: url("../images/sartre_mobile.jpg");
     margin-top: 15px;
     height: 200px;
     width: 100%;
